@@ -8,6 +8,7 @@ public class Application {
 
         Thread currencyUpdaterThread = new Thread(currencyXMLUpdater);
         currencyUpdaterThread.run();
+        System.out.println("Added nothing");
     }
 
 
