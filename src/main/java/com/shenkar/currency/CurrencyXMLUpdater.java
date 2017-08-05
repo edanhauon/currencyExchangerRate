@@ -16,16 +16,13 @@ public class CurrencyXMLUpdater implements Runnable {
     private static String URLToBOI = "http://www.boi.org.il/currency.xml";
     private static Charset defaultCharset;
     private int timeToSleep;
-    private ObjectMapper objectMapper;
     private ObjectReader objectReader;
     private File xmlFile;
     private CurrencyDataHolder currencyDataHolderObserver;
     private boolean keepUpdating;
 
     public CurrencyXMLUpdater(CurrencyDataHolder currencyDataHolderObserver) throws Exception{
-        ObjectMapper objectMapper = new XmlMapper();//.configure(MapperFeature.USE_ANNOTATIONS, true);
-        objectReader = objectMapper.readerFor(Currency[].class);
-
+        objectReader = new XmlMapper().readerFor(Currency[].class);
 
         xmlFile = new File("~/rawXML");
 
@@ -39,7 +36,6 @@ public class CurrencyXMLUpdater implements Runnable {
     }
 
     private List<Currency> parseXMLToCurrencies(String rawXMLString) throws Exception {
-        rawXMLString = rawXMLString;//.replaceAll("<LAST_UPDATE>.*</LAST_UPDATE>\n","");
         Currency[] currencies = objectReader.readValue(rawXMLString);
         FileUtils.write(xmlFile, rawXMLString, defaultCharset);
 
