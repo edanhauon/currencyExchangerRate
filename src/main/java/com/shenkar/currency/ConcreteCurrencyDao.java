@@ -3,13 +3,13 @@ package com.shenkar.currency;
 
 import java.util.List;
 
-public final class ConcreteCurrencyDataHolder implements CurrencyDataHolder {
+public final class ConcreteCurrencyDao implements CurrencyDao {
     private List<Currency> currencies;
 
-    public ConcreteCurrencyDataHolder() {
+    public ConcreteCurrencyDao() {
     }
 
-    public ConcreteCurrencyDataHolder(List<Currency> currencies) {
+    public ConcreteCurrencyDao(List<Currency> currencies) {
         this.currencies = currencies;
     }
 

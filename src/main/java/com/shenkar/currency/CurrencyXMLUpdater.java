@@ -18,10 +18,10 @@ public class CurrencyXMLUpdater implements Runnable {
     private int timeToSleep;
     private ObjectReader objectReader;
     private File xmlFile;
-    private CurrencyDataHolder currencyDataHolderObserver;
+    private CurrencyDao currencyDaoObserver;
     private boolean keepUpdating;
 
-    public CurrencyXMLUpdater(CurrencyDataHolder currencyDataHolderObserver) throws Exception{
+    public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver) throws Exception{
         objectReader = new XmlMapper().readerFor(Currency[].class);
 
         xmlFile = new File("~/rawXML");
@@ -30,7 +30,7 @@ public class CurrencyXMLUpdater implements Runnable {
         FileUtils.write(xmlFile, "", defaultCharset);
 
         timeToSleep = 5*1000; //In ms
-        this.currencyDataHolderObserver = currencyDataHolderObserver;
+        this.currencyDaoObserver = currencyDaoObserver;
         keepUpdating = true;
     }
 
@@ -63,7 +63,7 @@ public class CurrencyXMLUpdater implements Runnable {
                 System.out.println("Checking for update");
                 String newXMLString = checkForUpdate();
                 if (newXMLString != null)
-                    currencyDataHolderObserver.update(
+                    currencyDaoObserver.update(
                             parseXMLToCurrencies(newXMLString));
                 System.out.println("Update checked... going to sleep");
                 Thread.sleep(timeToSleep);
