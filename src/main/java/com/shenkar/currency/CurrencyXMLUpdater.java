@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CurrencyXMLUpdater implements Runnable {
     private static String URLToBOI = "http://www.boi.org.il/currency.xml";
-    private static Charset defaultCharset;
+    private static Charset defaultCharset = Charset.defaultCharset();
     private int timeToSleep;
     private ObjectReader objectReader;
     private File xmlFile;
@@ -29,7 +29,6 @@ public class CurrencyXMLUpdater implements Runnable {
         //This is to get a diff in the first update
         FileUtils.write(xmlFile, "", defaultCharset);
 
-        defaultCharset = Charset.defaultCharset();
         timeToSleep = 5*1000; //In ms
         this.currencyDataHolderObserver = currencyDataHolderObserver;
         keepUpdating = true;
