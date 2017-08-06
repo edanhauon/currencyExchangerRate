@@ -6,7 +6,7 @@ import java.util.List;
  * Created by edanhauon on 06/08/2017.
  */
 public interface CurrencyDao {
-    Currency getCurrencyByName(String name);
+    Currency getCurrencyByCurrencyCode(String currencyCode);
 
     List<Currency> getCurrencies();
 

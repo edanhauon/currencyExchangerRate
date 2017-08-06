@@ -16,9 +16,9 @@ public class Application {
 
         Thread.sleep(4000);
         System.out.println(CurrencyConverter.convert(
-                currencyDao.getCurrencyByName("Yen"),
-                currencyDao.getCurrencyByName("Pound"),
-                88
+                currencyDao.getCurrencyByCurrencyCode("EGP"),
+                currencyDao.getCurrencyByCurrencyCode("GBP"),
+                66
         ));
         currencyXMLUpdater.setKeepUpdating(false);
     }

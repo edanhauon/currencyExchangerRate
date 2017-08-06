@@ -1,8 +1,6 @@
 package com.shenkar.currency.model;
 
-//import static com.google.common.collect.MoreCollectors.onlyElement;
 import java.util.List;
-import java.util.Map;
 
 public final class ConcreteCurrencyDao implements CurrencyDao {
     private List<Currency> currencies;
@@ -14,11 +12,10 @@ public final class ConcreteCurrencyDao implements CurrencyDao {
         this.currencies = currencies;
     }
 
-    public Currency getCurrencyByName(String name) {
+    public Currency getCurrencyByCurrencyCode(String currencyCode) {
         return currencies
                 .stream()
-                .filter((currency) -> currency.getName().equals(name)).findAny().get();
-                //.collect(onlyElement());
+                .filter((currency) -> currency.getCurrencyCode().equals(currencyCode)).findAny().get();
     }
 
     public List<Currency> getCurrencies() {
