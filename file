@@ -2,115 +2,115 @@
 <CURRENCIES>
   <LAST_UPDATE>2017-08-04</LAST_UPDATE>
   <CURRENCY>
-    <NAME>Dollar</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>USD</CURRENCYCODE>
-    <COUNTRY>USA</COUNTRY>
-    <RATE>3.607</RATE>
-    <CHANGE>0.502</CHANGE>
+    <name>Dollar</name>
+    <unit>1</unit>
+    <currencyCode>USD</currencyCode>
+    <country>USA</country>
+    <rate>3.607</rate>
+    <change>0.502</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Pound</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>GBP</CURRENCYCODE>
-    <COUNTRY>Great Britain</COUNTRY>
-    <RATE>4.7464</RATE>
-    <CHANGE>0.523</CHANGE>
+    <name>Pound</name>
+    <unit>1</unit>
+    <currencyCode>GBP</currencyCode>
+    <country>Great Britain</country>
+    <rate>4.7464</rate>
+    <change>0.523</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Yen</NAME>
-    <UNIT>100</UNIT>
-    <CURRENCYCODE>JPY</CURRENCYCODE>
-    <COUNTRY>Japan</COUNTRY>
-    <RATE>3.2769</RATE>
-    <CHANGE>0.853</CHANGE>
+    <name>Yen</name>
+    <unit>100</unit>
+    <currencyCode>JPY</currencyCode>
+    <country>Japan</country>
+    <rate>3.2769</rate>
+    <change>0.853</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Euro</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>EUR</CURRENCYCODE>
-    <COUNTRY>EMU</COUNTRY>
-    <RATE>4.2869</RATE>
-    <CHANGE>0.868</CHANGE>
+    <name>Euro</name>
+    <unit>1</unit>
+    <currencyCode>EUR</currencyCode>
+    <country>EMU</country>
+    <rate>4.2869</rate>
+    <change>0.868</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Dollar</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>AUD</CURRENCYCODE>
-    <COUNTRY>Australia</COUNTRY>
-    <RATE>2.8788</RATE>
-    <CHANGE>1.22</CHANGE>
+    <name>Dollar</name>
+    <unit>1</unit>
+    <currencyCode>AUD</currencyCode>
+    <country>Australia</country>
+    <rate>2.8788</rate>
+    <change>1.22</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Dollar</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>CAD</CURRENCYCODE>
-    <COUNTRY>Canada</COUNTRY>
-    <RATE>2.8708</RATE>
-    <CHANGE>0.829</CHANGE>
+    <name>Dollar</name>
+    <unit>1</unit>
+    <currencyCode>CAD</currencyCode>
+    <country>Canada</country>
+    <rate>2.8708</rate>
+    <change>0.829</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>krone</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>DKK</CURRENCYCODE>
-    <COUNTRY>Denmark</COUNTRY>
-    <RATE>0.5763</RATE>
-    <CHANGE>0.875</CHANGE>
+    <name>krone</name>
+    <unit>1</unit>
+    <currencyCode>DKK</currencyCode>
+    <country>Denmark</country>
+    <rate>0.5763</rate>
+    <change>0.875</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Krone</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>NOK</CURRENCYCODE>
-    <COUNTRY>Norway</COUNTRY>
-    <RATE>0.4573</RATE>
-    <CHANGE>0.793</CHANGE>
+    <name>Krone</name>
+    <unit>1</unit>
+    <currencyCode>NOK</currencyCode>
+    <country>Norway</country>
+    <rate>0.4573</rate>
+    <change>0.793</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Rand</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>ZAR</CURRENCYCODE>
-    <COUNTRY>South Africa</COUNTRY>
-    <RATE>0.2705</RATE>
-    <CHANGE>0.259</CHANGE>
+    <name>Rand</name>
+    <unit>1</unit>
+    <currencyCode>ZAR</currencyCode>
+    <country>South Africa</country>
+    <rate>0.2705</rate>
+    <change>0.259</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Krona</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>SEK</CURRENCYCODE>
-    <COUNTRY>Sweden</COUNTRY>
-    <RATE>0.4461</RATE>
-    <CHANGE>0.791</CHANGE>
+    <name>Krona</name>
+    <unit>1</unit>
+    <currencyCode>SEK</currencyCode>
+    <country>Sweden</country>
+    <rate>0.4461</rate>
+    <change>0.791</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Franc</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>CHF</CURRENCYCODE>
-    <COUNTRY>Switzerland</COUNTRY>
-    <RATE>3.7283</RATE>
-    <CHANGE>0.73</CHANGE>
+    <name>Franc</name>
+    <unit>1</unit>
+    <currencyCode>CHF</currencyCode>
+    <country>Switzerland</country>
+    <rate>3.7283</rate>
+    <change>0.73</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Dinar</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>JOD</CURRENCYCODE>
-    <COUNTRY>Jordan</COUNTRY>
-    <RATE>5.0894</RATE>
-    <CHANGE>0.551</CHANGE>
+    <name>Dinar</name>
+    <unit>1</unit>
+    <currencyCode>JOD</currencyCode>
+    <country>Jordan</country>
+    <rate>5.0894</rate>
+    <change>0.551</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Pound</NAME>
-    <UNIT>10</UNIT>
-    <CURRENCYCODE>LBP</CURRENCYCODE>
-    <COUNTRY>Lebanon</COUNTRY>
-    <RATE>0.0239</RATE>
-    <CHANGE>0.42</CHANGE>
+    <name>Pound</name>
+    <unit>10</unit>
+    <currencyCode>LBP</currencyCode>
+    <country>Lebanon</country>
+    <rate>0.0239</rate>
+    <change>0.42</change>
   </CURRENCY>
   <CURRENCY>
-    <NAME>Pound</NAME>
-    <UNIT>1</UNIT>
-    <CURRENCYCODE>EGP</CURRENCYCODE>
-    <COUNTRY>Egypt</COUNTRY>
-    <RATE>0.2029</RATE>
-    <CHANGE>0.645</CHANGE>
+    <name>Pound</name>
+    <unit>1</unit>
+    <currencyCode>EGP</currencyCode>
+    <country>Egypt</country>
+    <rate>0.2029</rate>
+    <change>0.645</change>
   </CURRENCY>
 </CURRENCIES>

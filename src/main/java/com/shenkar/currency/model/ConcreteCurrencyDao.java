@@ -1,4 +1,4 @@
-package com.shenkar.currency;
+package com.shenkar.currency.model;
 
 
 import java.util.List;
