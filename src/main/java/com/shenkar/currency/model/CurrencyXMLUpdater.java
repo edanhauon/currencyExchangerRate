@@ -2,8 +2,6 @@ package com.shenkar.currency.model;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.shenkar.currency.model.Currency;
-import com.shenkar.currency.model.CurrencyDao;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
