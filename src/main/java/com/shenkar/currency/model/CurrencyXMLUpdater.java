@@ -1,4 +1,4 @@
-package com.shenkar.currency;
+package com.shenkar.currency.model;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
