@@ -1,3 +1,171 @@
 2017-08-10 11:50:34 INFO  Application:11 - a
 2017-08-10 11:50:51 INFO  Application:11 - Starting application
 2017-08-10 12:27:19 INFO  Application:12 - Starting application
+2017-08-10 13:35:24 INFO  Application:12 - Starting application
+2017-08-10 13:35:24 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 13:37:24 INFO  Application:12 - Starting application
+2017-08-10 13:37:24 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 13:43:11 INFO  Application:12 - Starting application
+2017-08-10 13:43:11 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 15:48:08 INFO  Application:12 - Starting application
+2017-08-10 15:48:08 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 15:48:08 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 15:48:08 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 15:48:08 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 15:48:08 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 15:48:08 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 15:48:08 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 15:48:08 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 15:48:14 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 15:48:25 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:21:56 INFO  Application:12 - Starting application
+2017-08-10 16:21:57 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:21:57 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:21:57 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:21:57 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:21:57 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:21:57 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:21:57 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:21:57 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:22:04 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:22:52 INFO  Application:12 - Starting application
+2017-08-10 16:22:52 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:22:52 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:22:52 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:22:52 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:22:52 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:22:52 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:22:52 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:22:52 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:22:56 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:23:20 INFO  Application:12 - Starting application
+2017-08-10 16:23:21 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:23:21 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:23:21 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:23:21 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:23:21 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:23:21 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:23:21 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:23:21 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:23:56 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:26:00 INFO  Application:12 - Starting application
+2017-08-10 16:26:00 INFO  CurrencyMainController:24 - Instantiating CurrencyMainController
+2017-08-10 16:26:00 INFO  CurrencyMainController:32 - Initializing threads
+2017-08-10 16:26:00 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:26:00 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:26:00 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:26:00 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:26:00 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:26:00 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:26:00 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:26:00 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:26:04 DEBUG CurrencyMainController:64 - Update triggered on Controller
+2017-08-10 16:26:04 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:26:04 DEBUG CurrencyMainController:43 - Converted 890.0 (USD) to (EUR) = 760.0161301800413
+2017-08-10 16:26:04 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:26:04 DEBUG CurrencyMainController:43 - Converted 890.0 (USD) to (EUR) = 760.0161301800413
+2017-08-10 16:26:04 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:26:21 DEBUG CurrencyMainController:64 - Update triggered on Controller
+2017-08-10 16:26:21 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:26:21 DEBUG CurrencyMainController:43 - Converted 890.0 (USD) to (EUR) = 760.0161301800413
+2017-08-10 16:26:21 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:26:21 DEBUG CurrencyMainController:43 - Converted 890.0 (USD) to (EUR) = 760.0161301800413
+2017-08-10 16:26:21 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:29:22 INFO  Application:12 - Starting application
+2017-08-10 16:29:22 INFO  CurrencyMainController:24 - Instantiating CurrencyMainController
+2017-08-10 16:29:22 INFO  CurrencyMainController:32 - Initializing threads
+2017-08-10 16:29:22 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:29:22 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:29:23 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:29:23 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:29:23 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:29:23 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:29:23 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:29:23 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:29:26 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 16:29:26 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:29:26 DEBUG CurrencyMainController:65 - Converted 905.0 (USD) to (AUD) = 1148.841637575373
+2017-08-10 16:29:26 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:29:26 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:30:31 INFO  Application:12 - Starting application
+2017-08-10 16:30:31 INFO  CurrencyMainController:24 - Instantiating CurrencyMainController
+2017-08-10 16:30:31 INFO  CurrencyMainController:32 - Initializing threads
+2017-08-10 16:30:31 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:30:31 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:30:31 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:30:31 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:30:31 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:30:31 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:30:31 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:30:31 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:30:37 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 16:30:37 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:30:37 DEBUG CurrencyMainController:65 - Converted 908.0 (AUD) to (CAD) = 910.89
+2017-08-10 16:30:37 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:30:37 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:30:46 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 16:30:46 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:30:46 DEBUG CurrencyMainController:65 - Converted 908.0 (AUD) to (DKK) = 4,543.04
+2017-08-10 16:30:46 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:30:46 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:31:42 INFO  Application:12 - Starting application
+2017-08-10 16:31:42 INFO  CurrencyMainController:24 - Instantiating CurrencyMainController
+2017-08-10 16:31:42 INFO  CurrencyMainController:32 - Initializing threads
+2017-08-10 16:31:42 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 16:31:42 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 16:31:42 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 16:31:42 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 16:31:42 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 16:31:42 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 16:31:42 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 16:31:42 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 16:31:47 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 16:31:47 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:31:47 DEBUG CurrencyMainController:64 - Converted 54.0 (JPY) to (EUR) = 0.42
+2017-08-10 16:31:47 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:31:57 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 16:31:57 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:31:57 DEBUG CurrencyMainController:64 - Converted 54.0 (USD) to (JPY) = 5,933.16
+2017-08-10 16:31:57 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 16:32:10 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 16:32:10 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 16:32:10 DEBUG CurrencyMainController:64 - Converted 100.0 (USD) to (JPY) = 10,987.33
+2017-08-10 16:32:10 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:25 INFO  Application:12 - Starting application
+2017-08-10 17:07:25 INFO  CurrencyMainController:24 - Instantiating CurrencyMainController
+2017-08-10 17:07:25 WARN  CurrencyXMLUpdater:32 - Instantiating CurrencyXMLUpdater
+2017-08-10 17:07:25 INFO  CurrencyMainController:32 - Initializing threads
+2017-08-10 17:07:25 INFO  CurrencyXMLUpdater:81 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 17:07:25 INFO  CurrencyXMLUpdater:53 - Parsing Currencies from XML
+2017-08-10 17:07:25 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 17:07:25 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 17:07:25 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 17:07:25 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 17:07:25 INFO  CurrencyMainView:118 - Preparing data tables:
+2017-08-10 17:07:25 INFO  CurrencyMainView:119 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 17:07:25 INFO  CurrencyMainView:124 - 2. Populating table with from actual object
+2017-08-10 17:07:25 INFO  CurrencyMainView:138 - 3. Instantiating the table object
+2017-08-10 17:07:34 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:34 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:34 DEBUG CurrencyMainController:64 - Converted 890.0 (USD) to (EUR) = 760.02
+2017-08-10 17:07:34 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:40 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:40 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:40 DEBUG CurrencyMainController:64 - Converted 890.0 (USD) to (EUR) = 760.02
+2017-08-10 17:07:40 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:43 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:43 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:43 DEBUG CurrencyMainController:64 - Converted 890.0 (DKK) to (EUR) = 119.66
+2017-08-10 17:07:43 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:47 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:47 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:47 DEBUG CurrencyMainController:64 - Converted 890.0 (DKK) to (USD) = 140.13
+2017-08-10 17:07:47 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:53 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:53 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:53 DEBUG CurrencyMainController:64 - Converted 56044.0 (DKK) to (USD) = 8,823.82
+2017-08-10 17:07:53 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:07:59 DEBUG CurrencyMainController:62 - Update triggered on Controller
+2017-08-10 17:07:59 INFO  CurrencyMainController:37 - Conversion triggered!
+2017-08-10 17:07:59 DEBUG CurrencyMainController:64 - Converted 56044.0 (GBP) to (DKK) = 462,451.99
+2017-08-10 17:07:59 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount

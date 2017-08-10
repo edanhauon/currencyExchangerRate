@@ -2,8 +2,7 @@ package com.shenkar.currency.model;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.shenkar.currency.control.CurrencyLogger;
-import com.shenkar.currency.view.CurrencyMainView;
+import com.shenkar.currency.CurrencyLogger;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
@@ -19,7 +18,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CurrencyXMLUpdater extends Thread {
-    final static Logger logger = CurrencyLogger.init(CurrencyXMLUpdater.class);
+    private final static Logger logger = CurrencyLogger.init(CurrencyXMLUpdater.class);
     private static String URLToBOI = "http://www.boi.org.il/currency.xml";
     private static Charset defaultCharset = Charset.defaultCharset();
     private int timeToSleep;
@@ -27,14 +26,10 @@ public class CurrencyXMLUpdater extends Thread {
     private File xmlFile;
     private CurrencyDao currencyDaoObserver;
     private boolean keepUpdating;
-
-    public String getLastUpdate() {
-        return lastUpdate;
-    }
-
     private String lastUpdate;
 
     public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver) {
+        logger.warn("Instantiating CurrencyXMLUpdater");
         objectReader = new XmlMapper().readerFor(Currency[].class); // This is for parsing - XML -> Currencies
 
         try {
@@ -43,6 +38,7 @@ public class CurrencyXMLUpdater extends Thread {
             //This is to get a diff in the first update
             FileUtils.write(xmlFile, "", defaultCharset);
         } catch (IOException e) {
+            logger.warn("An error occurred while writing to file");
             e.printStackTrace();
         }
 
@@ -54,12 +50,14 @@ public class CurrencyXMLUpdater extends Thread {
     private List<Currency> parseXMLToCurrencies(String rawXMLString) throws Exception {
         Currency[] currencies;
         try {
+            logger.info("Parsing Currencies from XML");
             currencies = objectReader.readValue(rawXMLString);
 
             //Otherwise, need to write changes into file
             FileUtils.write(xmlFile, rawXMLString, defaultCharset);
 
         } catch (JsonMappingException e) {
+            logger.warn("Problem with XML parsing (could be internet issues) - reading from last known XML");
             currencies = objectReader.readValue(FileUtils.readFileToString(xmlFile, defaultCharset));
         }
 
@@ -80,7 +78,7 @@ public class CurrencyXMLUpdater extends Thread {
         if (oldXMLString.equals(newXMLString))
             return null;
 
-
+        logger.info("Found diff from current know currencies (happens in initial start as well)");
         Matcher matcher = Pattern
                 .compile("<LAST_UPDATE>(.*)</LAST_UPDATE>")
                 .matcher(newRawXMLString);
@@ -109,6 +107,10 @@ public class CurrencyXMLUpdater extends Thread {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public String getLastUpdate() {
+        return lastUpdate;
     }
 
     public int getTimeToSleep() {

@@ -1,4 +1,4 @@
-package com.shenkar.currency.control;
+package com.shenkar.currency;
 
 import org.apache.log4j.*;
 

@@ -1,5 +1,6 @@
 package com.shenkar.currency.control;
 
+import com.shenkar.currency.CurrencyLogger;
 import com.shenkar.currency.model.ConcreteCurrencyDao;
 import com.shenkar.currency.model.Currency;
 import com.shenkar.currency.model.CurrencyDao;
@@ -12,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CurrencyMainController {
-    final static Logger logger = Logger.getLogger(CurrencyMainController.class);
+    private final static Logger logger = CurrencyLogger.init(CurrencyMainController.class);
     private CurrencyDao currencyDao;
     private CurrencyXMLUpdater currencyXMLUpdater;
     private CurrencyConverter currencyConverter;
@@ -21,6 +22,7 @@ public class CurrencyMainController {
     private Thread mainViewThread;
 
     public CurrencyMainController() {
+        logger.info("Instantiating CurrencyMainController");
         currencyDao = new ConcreteCurrencyDao();
         currencyXMLUpdater = new CurrencyXMLUpdater(currencyDao);
         mainView = new CurrencyMainView(this);
@@ -28,13 +30,12 @@ public class CurrencyMainController {
     }
 
     public void run() {
+        logger.info("Initializing threads");
         initThreads();
-
-        System.out.println(convert("EGP", "GBP", 66));
-        mainViewThread.start();
     }
 
     private double convert(String convertFrom, String convertTo, double amount) {
+        logger.info("Conversion triggered!");
         return currencyConverter.convert(
                 currencyDao.getCurrencyByCurrencyCode(convertFrom),
                 currencyDao.getCurrencyByCurrencyCode(convertTo),
@@ -51,16 +52,19 @@ public class CurrencyMainController {
                 //Waiting for xmlUpdater to finish populate all currencies
                 currencyXMLUpdater.wait();
             } catch (InterruptedException e) {
+                logger.warn("An error occurred while waiting for tables");
                 e.printStackTrace();
             }
         }
+        mainViewThread.start();
     }
 
     public void update(String currencyNameFrom, String currencyNameTo, double amount) {
-        System.out.println(amount + " " + currencyNameFrom + " to " + currencyNameTo + " is = "
-            + new DecimalFormat("#,###.##")
-                .format(convert(currencyNameFrom, currencyNameTo, amount)));
-        mainView.updateResult(convert(currencyNameFrom, currencyNameTo, amount));
+        logger.debug("Update triggered on Controller");
+        double total = convert(currencyNameFrom, currencyNameTo, amount);
+        logger.debug("Converted " + amount + " (" + currencyNameFrom + ") to (" + currencyNameTo + ") = "
+                + new DecimalFormat("#,###.##").format(total));
+        mainView.updateResult(total);
     }
 
     public List<String> getCurrenciesNames() {
