@@ -15,7 +15,9 @@ public final class ConcreteCurrencyDao implements CurrencyDao {
     public Currency getCurrencyByCurrencyCode(String currencyCode) {
         return currencies
                 .stream()
-                .filter((currency) -> currency.getCurrencyCode().equals(currencyCode)).findAny().get();
+                .filter((currency) -> currency.getCurrencyCode().equals(currencyCode))
+                .findAny() //Should get only one - if I got more then something went wrong
+                .get();
     }
 
     public List<Currency> getCurrencies() {

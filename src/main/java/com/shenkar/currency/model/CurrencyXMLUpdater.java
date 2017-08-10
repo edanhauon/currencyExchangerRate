@@ -6,13 +6,16 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-public class CurrencyXMLUpdater implements Runnable {
+public class CurrencyXMLUpdater extends Thread {
     private static String URLToBOI = "http://www.boi.org.il/currency.xml";
     private static Charset defaultCharset = Charset.defaultCharset();
     private int timeToSleep;
@@ -21,51 +24,82 @@ public class CurrencyXMLUpdater implements Runnable {
     private CurrencyDao currencyDaoObserver;
     private boolean keepUpdating;
 
-    public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver) throws Exception{
-        objectReader = new XmlMapper().readerFor(Currency[].class);
+    public String getLastUpdate() {
+        return lastUpdate;
+    }
 
-        xmlFile = new File("~/rawXML");
+    private String lastUpdate;
 
-        //This is to get a diff in the first update
-        FileUtils.write(xmlFile, "", defaultCharset);
+    public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver) {
+        objectReader = new XmlMapper().readerFor(Currency[].class); // This is for parsing - XML -> Currencies
 
-        timeToSleep = 5*1000; //In ms
+        try {
+            xmlFile = new File("rawXML.xml"); //Data File
+
+            //This is to get a diff in the first update
+            FileUtils.write(xmlFile, "", defaultCharset);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        timeToSleep = 40*1000; //In ms
         this.currencyDaoObserver = currencyDaoObserver;
         keepUpdating = true;
     }
 
     private List<Currency> parseXMLToCurrencies(String rawXMLString) throws Exception {
-        Currency[] currencies = objectReader.readValue(rawXMLString);
-        FileUtils.write(xmlFile, rawXMLString, defaultCharset);
+        Currency[] currencies;
+        try {
+            currencies = objectReader.readValue(rawXMLString);
+
+            //Otherwise, need to write changes into file
+            FileUtils.write(xmlFile, rawXMLString, defaultCharset);
+
+        } catch (JsonMappingException e) {
+            currencies = objectReader.readValue(FileUtils.readFileToString(xmlFile, defaultCharset));
+        }
 
         return Arrays.asList(currencies);
     }
 
     private String checkForUpdate() throws Exception {
         InputStream xmlInputStream = new URL(URLToBOI).openStream();
-        String newXMLString = IOUtils.toString(xmlInputStream, defaultCharset).replaceAll("<LAST_UPDATE>.*</LAST_UPDATE>\n","");
+        String newRawXMLString = IOUtils.toString(xmlInputStream, defaultCharset);
 
+        //This part is to help ObjectReader - I don't want him to think "LAST_UPDATE" is a currency
+        String newXMLString = newRawXMLString.replaceAll("<LAST_UPDATE>.*</LAST_UPDATE>\n","");
+
+        //In order to compare to the new XML - should have "LAST_UPDATE" already removed
         String oldXMLString = FileUtils.readFileToString(xmlFile, defaultCharset);
 
         //"null" indicates there hasn't been any changes
         if (oldXMLString.equals(newXMLString))
             return null;
 
-        System.out.println("There is a diff");
-        //Otherwise, need to write changes into file
-        FileUtils.write(xmlFile, newXMLString, defaultCharset);
+
+        Matcher matcher = Pattern
+                .compile("<LAST_UPDATE>(.*)</LAST_UPDATE>")
+                .matcher(newRawXMLString);
+        if (matcher.find())
+            lastUpdate = matcher.group(1);
         return newXMLString;
     }
 
+    @Override
     public void run() {
         try {
-            while (keepUpdating) { //So it can be stopped
-                System.out.println("Checking for update");
+            while (keepUpdating) { //So it can be stopped by a setter
                 String newXMLString = checkForUpdate();
-                if (newXMLString != null)
-                    currencyDaoObserver.update(
-                            parseXMLToCurrencies(newXMLString));
-                System.out.println("Update checked... going to sleep");
+                if (newXMLString != null) {
+                    //Giving the Dao the new list of currencies
+                    currencyDaoObserver.update(parseXMLToCurrencies(newXMLString));
+                    synchronized (this) {
+                        //This is to notify the application that I'm done with fetching currencies
+                        // and that they can be accessed
+                        this.notify();
+                    }
+                }
+                //Creating gaps between requests
                 Thread.sleep(timeToSleep);
             }
         } catch (Exception e) {
