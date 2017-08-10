@@ -2,8 +2,11 @@ package com.shenkar.currency.model;
 
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.shenkar.currency.control.CurrencyLogger;
+import com.shenkar.currency.view.CurrencyMainView;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.apache.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,6 +19,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CurrencyXMLUpdater extends Thread {
+    final static Logger logger = CurrencyLogger.init(CurrencyXMLUpdater.class);
     private static String URLToBOI = "http://www.boi.org.il/currency.xml";
     private static Charset defaultCharset = Charset.defaultCharset();
     private int timeToSleep;

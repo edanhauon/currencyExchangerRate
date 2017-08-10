@@ -1,7 +1,10 @@
 package com.shenkar.currency.view;
 
+import com.shenkar.currency.Application;
+import com.shenkar.currency.control.CurrencyLogger;
 import com.shenkar.currency.control.CurrencyMainController;
 import com.shenkar.currency.model.Currency;
+import org.apache.log4j.Logger;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -14,6 +17,7 @@ import java.util.Vector;
 import java.util.stream.Collectors;
 
 public class CurrencyMainView extends JFrame implements Runnable {
+    final static Logger logger = CurrencyLogger.init(CurrencyMainView.class);
     private CurrencyMainController currencyMainController;
     private JPanel mainPanel;
     private JComboBox<Object> fromList;
