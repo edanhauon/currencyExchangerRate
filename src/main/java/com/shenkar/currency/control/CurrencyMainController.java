@@ -24,7 +24,7 @@ public class CurrencyMainController {
     public CurrencyMainController() {
         logger.info("Instantiating CurrencyMainController");
         currencyDao = new ConcreteCurrencyDao();
-        currencyXMLUpdater = new CurrencyXMLUpdater(currencyDao);
+        currencyXMLUpdater = new CurrencyXMLUpdater(currencyDao, this);
         mainView = new CurrencyMainView(this);
         currencyConverter = new CurrencyConverter();
     }
@@ -59,12 +59,17 @@ public class CurrencyMainController {
         mainViewThread.start();
     }
 
-    public void update(String currencyNameFrom, String currencyNameTo, double amount) {
+    public void invokeConversionRequest(String currencyNameFrom, String currencyNameTo, double amount) {
         logger.debug("Update triggered on Controller");
         double total = convert(currencyNameFrom, currencyNameTo, amount);
         logger.debug("Converted " + amount + " (" + currencyNameFrom + ") to (" + currencyNameTo + ") = "
                 + new DecimalFormat("#,###.##").format(total));
         mainView.updateResult(total);
+    }
+
+    public void invokeRefreshRequest() {
+        logger.debug("Refresh request triggered");
+        currencyXMLUpdater.interrupt();
     }
 
     public List<String> getCurrenciesNames() {
@@ -81,5 +86,9 @@ public class CurrencyMainController {
 
     public String getLastUpdate() {
         return currencyXMLUpdater.getLastUpdate();
+    }
+
+    public void updateWithLatestChange() {
+        mainView.updateLastUpdate();
     }
 }

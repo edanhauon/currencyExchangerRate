@@ -169,3 +169,296 @@
 2017-08-10 17:07:59 INFO  CurrencyMainController:37 - Conversion triggered!
 2017-08-10 17:07:59 DEBUG CurrencyMainController:64 - Converted 56044.0 (GBP) to (DKK) = 462,451.99
 2017-08-10 17:07:59 INFO  CurrencyMainView:146 - An update occurred (triggered by button) to amount
+2017-08-10 17:30:05 INFO  Application:11 - Starting application
+2017-08-10 17:30:05 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 17:30:05 WARN  CurrencyXMLUpdater:32 - Instantiating CurrencyXMLUpdater
+2017-08-10 17:30:05 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 17:30:06 INFO  CurrencyXMLUpdater:81 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 17:30:06 INFO  CurrencyXMLUpdater:53 - Parsing Currencies from XML
+2017-08-10 17:30:06 INFO  Application:14 - Application closed
+2017-08-10 17:30:06 INFO  CurrencyMainView:46 - Initializing frames
+2017-08-10 17:30:06 INFO  CurrencyMainView:59 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 17:30:06 INFO  CurrencyMainView:76 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 17:30:06 INFO  CurrencyMainView:100 - Preparing convert button
+2017-08-10 17:30:06 INFO  CurrencyMainView:115 - Preparing data tables:
+2017-08-10 17:30:06 INFO  CurrencyMainView:116 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 17:30:06 INFO  CurrencyMainView:121 - 2. Populating table with from actual object
+2017-08-10 17:30:06 INFO  CurrencyMainView:135 - 3. Instantiating the table object
+2017-08-10 17:30:09 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 17:30:09 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 17:30:09 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (EUR) = 760.02
+2017-08-10 17:30:09 INFO  CurrencyMainView:160 - An update occurred (triggered by button) to amount
+2017-08-10 18:15:04 INFO  Application:11 - Starting application
+2017-08-10 18:15:04 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:15:04 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:15:04 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:15:04 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:15:05 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:15:05 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:15:05 WARN  CurrencyXMLUpdater:63 - Problem with XML parsing (could be internet issues) - reading from last known XML
+2017-08-10 18:15:05 INFO  Application:14 - Application closed
+2017-08-10 18:15:05 INFO  CurrencyMainView:47 - Initializing frames
+2017-08-10 18:15:05 INFO  CurrencyMainView:60 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:16:37 INFO  Application:11 - Starting application
+2017-08-10 18:16:37 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:16:37 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:16:37 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:16:37 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:16:37 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:16:37 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:16:37 INFO  Application:14 - Application closed
+2017-08-10 18:16:37 INFO  CurrencyMainView:47 - Initializing frames
+2017-08-10 18:16:37 INFO  CurrencyMainView:60 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:16:37 INFO  CurrencyMainView:77 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:16:37 INFO  CurrencyMainView:101 - Preparing convert button
+2017-08-10 18:16:37 INFO  CurrencyMainView:114 - Preparing refresh button
+2017-08-10 18:16:37 INFO  CurrencyMainView:125 - Preparing data tables:
+2017-08-10 18:16:37 INFO  CurrencyMainView:126 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:16:37 INFO  CurrencyMainView:131 - 2. Populating table with from actual object
+2017-08-10 18:16:37 INFO  CurrencyMainView:145 - 3. Instantiating the table object
+2017-08-10 18:18:52 INFO  Application:11 - Starting application
+2017-08-10 18:18:52 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:18:52 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:18:52 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:18:52 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:18:52 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:18:52 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:18:52 INFO  Application:14 - Application closed
+2017-08-10 18:18:52 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:18:52 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:18:52 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:18:52 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:18:52 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:18:52 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:18:52 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:18:52 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:18:52 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:19:26 INFO  Application:11 - Starting application
+2017-08-10 18:19:26 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:19:26 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:19:27 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:19:27 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:19:27 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:19:27 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:19:27 INFO  Application:14 - Application closed
+2017-08-10 18:19:27 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:19:27 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:19:27 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:19:27 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:19:27 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:19:27 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:19:27 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:19:27 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:19:27 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:19:35 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:19:35 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:19:35 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (USD) = 890
+2017-08-10 18:19:35 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:19:59 INFO  Application:11 - Starting application
+2017-08-10 18:19:59 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:19:59 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:19:59 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:19:59 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:19:59 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:19:59 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:19:59 INFO  Application:14 - Application closed
+2017-08-10 18:19:59 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:19:59 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:19:59 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:19:59 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:19:59 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:19:59 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:19:59 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:19:59 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:19:59 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:20:07 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:20:07 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:20:07 DEBUG CurrencyMainController:65 - Converted 89.0 (JPY) to (EUR) = 0.69
+2017-08-10 18:20:07 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:20:31 INFO  Application:11 - Starting application
+2017-08-10 18:20:31 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:20:31 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:20:31 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:20:31 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:20:31 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:20:31 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:20:32 INFO  Application:14 - Application closed
+2017-08-10 18:20:32 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:20:32 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:20:32 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:20:32 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:20:32 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:20:32 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:20:32 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:20:32 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:20:32 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:20:36 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:20:36 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:20:36 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (EUR) = 760.02
+2017-08-10 18:20:36 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:20:56 INFO  Application:11 - Starting application
+2017-08-10 18:20:56 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:20:56 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:20:56 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:20:56 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:20:56 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:20:56 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:20:56 INFO  Application:14 - Application closed
+2017-08-10 18:20:56 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:20:56 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:20:56 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:20:56 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:20:56 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:20:56 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:20:56 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:20:56 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:20:56 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:20:59 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:20:59 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:20:59 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (USD) = 890
+2017-08-10 18:20:59 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:21:03 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:21:03 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:21:03 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (USD) = 890
+2017-08-10 18:21:03 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:21:05 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:21:05 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:21:05 DEBUG CurrencyMainController:65 - Converted 890.0 (USD) to (EUR) = 760.02
+2017-08-10 18:21:05 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:21:07 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:25:26 INFO  Application:11 - Starting application
+2017-08-10 18:25:26 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:25:26 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:25:27 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:25:27 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:25:27 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:25:27 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:25:27 INFO  Application:14 - Application closed
+2017-08-10 18:25:27 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:25:27 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:25:27 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:25:27 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:25:27 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:25:27 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:25:27 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:25:27 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:25:27 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:25:33 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:25:33 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:25:33 DEBUG CurrencyMainController:65 - Converted 953.2 (CAD) to (JPY) = 82,240.23
+2017-08-10 18:25:33 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:25:36 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:25:54 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:25:54 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:25:54 DEBUG CurrencyMainController:65 - Converted 953.2 (CAD) to (JPY) = 82,240.23
+2017-08-10 18:25:54 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:26:46 INFO  Application:11 - Starting application
+2017-08-10 18:26:46 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:26:46 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:26:46 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:26:46 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:26:46 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:26:46 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:26:46 INFO  Application:14 - Application closed
+2017-08-10 18:26:46 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:26:46 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:26:46 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:26:46 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:26:46 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:26:46 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:26:46 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:26:46 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:26:46 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:26:48 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:26:48 DEBUG CurrencyXMLUpdater:115 - Sleep interrupted
+2017-08-10 18:26:48 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:26:48 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:28:00 INFO  Application:11 - Starting application
+2017-08-10 18:28:00 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:28:00 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:28:00 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:28:00 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:28:00 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:28:00 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:28:01 INFO  Application:14 - Application closed
+2017-08-10 18:28:01 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:28:01 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:28:01 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:28:01 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:28:01 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:28:01 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:28:01 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:28:01 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:28:01 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:28:02 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:28:02 DEBUG CurrencyXMLUpdater:116 - Sleep interrupted
+2017-08-10 18:28:02 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:28:02 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:28:08 INFO  Application:11 - Starting application
+2017-08-10 18:28:08 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:28:08 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:28:08 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:28:08 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:28:09 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:28:09 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:28:09 INFO  Application:14 - Application closed
+2017-08-10 18:28:09 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:28:09 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:28:09 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:28:09 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:28:09 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:28:09 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:28:09 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:28:09 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:28:09 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:28:12 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:28:12 DEBUG CurrencyXMLUpdater:116 - Sleep interrupted
+2017-08-10 18:28:12 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:28:12 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:29:12 INFO  Application:11 - Starting application
+2017-08-10 18:29:12 INFO  CurrencyMainController:25 - Instantiating CurrencyMainController
+2017-08-10 18:29:12 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:29:12 INFO  CurrencyMainController:33 - Initializing threads
+2017-08-10 18:29:12 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:29:12 INFO  CurrencyXMLUpdater:84 - Found diff from current know currencies (happens in initial start as well)
+2017-08-10 18:29:12 INFO  CurrencyXMLUpdater:56 - Parsing Currencies from XML
+2017-08-10 18:29:12 INFO  Application:14 - Application closed
+2017-08-10 18:29:12 INFO  CurrencyMainView:49 - Initializing frames
+2017-08-10 18:29:12 INFO  CurrencyMainView:62 - Preparing From label, Currencies dropdown list and last updated
+2017-08-10 18:29:12 INFO  CurrencyMainView:79 - Preparing To label, Currencies dropdown list and area for amount input
+2017-08-10 18:29:12 INFO  CurrencyMainView:103 - Preparing convert button
+2017-08-10 18:29:12 INFO  CurrencyMainView:116 - Preparing refresh button
+2017-08-10 18:29:12 INFO  CurrencyMainView:127 - Preparing data tables:
+2017-08-10 18:29:12 INFO  CurrencyMainView:128 - 1. Fetching Columns From Currency lass (using reflection)
+2017-08-10 18:29:12 INFO  CurrencyMainView:133 - 2. Populating table with from actual object
+2017-08-10 18:29:12 INFO  CurrencyMainView:147 - 3. Instantiating the table object
+2017-08-10 18:29:17 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:29:17 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:29:17 DEBUG CurrencyMainController:65 - Converted 890.3 (USD) to (AUD) = 1,130.18
+2017-08-10 18:29:17 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:29:19 DEBUG CurrencyMainController:63 - Update triggered on Controller
+2017-08-10 18:29:19 INFO  CurrencyMainController:38 - Conversion triggered!
+2017-08-10 18:29:19 DEBUG CurrencyMainController:65 - Converted 890.3 (DKK) to (AUD) = 177.94
+2017-08-10 18:29:19 INFO  CurrencyMainView:173 - An invokeConversionRequest occurred (triggered by button) to amount
+2017-08-10 18:29:22 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:29:22 DEBUG CurrencyXMLUpdater:116 - Sleep interrupted
+2017-08-10 18:29:22 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:29:22 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:29:23 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:29:23 DEBUG CurrencyXMLUpdater:116 - Sleep interrupted
+2017-08-10 18:29:23 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:29:23 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:29:24 DEBUG CurrencyMainController:71 - Refresh request triggered
+2017-08-10 18:29:24 DEBUG CurrencyXMLUpdater:116 - Sleep interrupted
+2017-08-10 18:29:24 INFO  CurrencyXMLUpdater:97 - Checking for updates
+2017-08-10 18:29:24 INFO  CurrencyXMLUpdater:109 - No updates for now..
+2017-08-10 18:51:54 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:52:52 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:55:50 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:56:18 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:56:38 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:57:04 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:57:11 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:57:18 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:57:41 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater
+2017-08-10 18:58:23 WARN  CurrencyXMLUpdater:34 - Instantiating CurrencyXMLUpdater

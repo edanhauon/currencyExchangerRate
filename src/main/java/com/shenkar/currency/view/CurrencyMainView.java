@@ -23,11 +23,14 @@ public class CurrencyMainView extends JFrame implements Runnable {
     private JComboBox<Object> fromList;
     private JComboBox<Object> toList;
     private JTextField amountTextField;
+    private JLabel lastUpdated;
     private boolean firstCalculate;
+    private boolean firstLatestUpdate;
 
     public CurrencyMainView(CurrencyMainController currencyMainController) {
         this.currencyMainController = currencyMainController;
         firstCalculate = true;
+        firstLatestUpdate = true;
     }
 
     @Override
@@ -49,9 +52,9 @@ public class CurrencyMainView extends JFrame implements Runnable {
         setResizable(false);
 
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayout(5, 1, 5, 5));
+        mainPanel.setLayout(new GridLayout(6, 1, 5, 5));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(15, 20, 20, 20));
-        mainPanel.setPreferredSize(new Dimension(500, 500));
+        mainPanel.setPreferredSize(new Dimension(500, 800));
         add(mainPanel);
     }
 
@@ -67,7 +70,7 @@ public class CurrencyMainView extends JFrame implements Runnable {
         fromList.setMaximumSize(new Dimension(50, 40));
         upperLayer.add(fromList);
 
-        initLastColumnName(upperLayer, "Last Update: " + currencyMainController.getLastUpdate(), BorderFactory.createEmptyBorder(2, 50, 2, 2));
+        lastUpdated = initLastColumnName(upperLayer, "Last Update: " + currencyMainController.getLastUpdate(), BorderFactory.createEmptyBorder(2, 50, 2, 2));
 
         mainPanel.add(upperLayer);
     }
@@ -102,13 +105,22 @@ public class CurrencyMainView extends JFrame implements Runnable {
         convertButton.setPreferredSize(new Dimension(80, 50));
         convertButton.setBorder(BorderFactory.createEmptyBorder(15, 7, 20, 2));
 
-        convertButton.addActionListener(e -> currencyMainController.update(
+        convertButton.addActionListener(e -> currencyMainController.invokeConversionRequest(
                 (String) fromList.getSelectedItem(),
                 (String)  toList.getSelectedItem(),
                 Double.parseDouble(amountTextField.getText().replace(",", ""))
         ));
 
         mainPanel.add(convertButton);
+
+        logger.info("Preparing refresh button");
+        JButton refreshButton = new JButton("refresh");
+        refreshButton.setPreferredSize(new Dimension(80, 50));
+        refreshButton.setBorder(BorderFactory.createEmptyBorder(15, 7, 20, 2));
+
+        refreshButton.addActionListener(e -> currencyMainController.invokeRefreshRequest());
+
+        mainPanel.add(refreshButton);
     }
 
     private void initTables() {
@@ -147,17 +159,18 @@ public class CurrencyMainView extends JFrame implements Runnable {
         toPanel.add(toCurrencyLabel);
     }
 
-    private void initLastColumnName(JPanel firstLayer, String text, Border emptyBorder) {
+    private JLabel initLastColumnName(JPanel firstLayer, String text, Border emptyBorder) {
         JLabel lastUpdateLabel = new JLabel();
         lastUpdateLabel.setText(text);
         lastUpdateLabel.setBorder(emptyBorder);
         lastUpdateLabel.setPreferredSize(new Dimension(50, 10));
         lastUpdateLabel.setMinimumSize(new Dimension(50, 40));
         firstLayer.add(lastUpdateLabel);
+        return lastUpdateLabel;
     }
 
     public void updateResult(double result) {
-        logger.info("An update occurred (triggered by button) to amount");
+        logger.info("An invokeConversionRequest occurred (triggered by button) to amount");
         JLabel resultLabel = new JLabel();
         resultLabel.setText("Total is: " + new DecimalFormat("#,###.##").format(result) + " " + toList.getSelectedItem());
         resultLabel.setBorder(BorderFactory.createEmptyBorder(2, 50, 2, 40));
@@ -166,11 +179,21 @@ public class CurrencyMainView extends JFrame implements Runnable {
         if (firstCalculate) {
             firstCalculate = false;
         } else {
-            mainPanel.remove(4);
+            mainPanel.remove(5);
         }
-        mainPanel.add(resultLabel, 0, 4);
+        mainPanel.add(resultLabel, 0, 5);
         pack();
         setVisible(true);
     }
 
+    public void updateLastUpdate() {
+        if (firstLatestUpdate) {
+            firstLatestUpdate = false;
+        } else {
+            logger.info("Last update string is being updated in view");
+            lastUpdated.setText("Last Update: " + currencyMainController.getLastUpdate() + " (refreshed)");
+            pack();
+            setVisible(true);
+        }
+    }
 }

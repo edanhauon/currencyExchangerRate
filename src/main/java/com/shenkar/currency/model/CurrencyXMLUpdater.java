@@ -3,6 +3,7 @@ package com.shenkar.currency.model;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.shenkar.currency.CurrencyLogger;
+import com.shenkar.currency.control.CurrencyMainController;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.log4j.Logger;
@@ -25,17 +26,18 @@ public class CurrencyXMLUpdater extends Thread {
     private ObjectReader objectReader;
     private File xmlFile;
     private CurrencyDao currencyDaoObserver;
+    private CurrencyMainController currencyMainControllerObserver;
     private boolean keepUpdating;
     private String lastUpdate;
 
-    public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver) {
+    public CurrencyXMLUpdater(CurrencyDao currencyDaoObserver, CurrencyMainController currencyMainControllerObserver) {
         logger.warn("Instantiating CurrencyXMLUpdater");
         objectReader = new XmlMapper().readerFor(Currency[].class); // This is for parsing - XML -> Currencies
 
         try {
             xmlFile = new File("rawXML.xml"); //Data File
 
-            //This is to get a diff in the first update
+            //This is to get a diff in the first invokeConversionRequest
             FileUtils.write(xmlFile, "", defaultCharset);
         } catch (IOException e) {
             logger.warn("An error occurred while writing to file");
@@ -44,6 +46,7 @@ public class CurrencyXMLUpdater extends Thread {
 
         timeToSleep = 40*1000; //In ms
         this.currencyDaoObserver = currencyDaoObserver;
+        this.currencyMainControllerObserver = currencyMainControllerObserver;
         keepUpdating = true;
     }
 
@@ -91,6 +94,7 @@ public class CurrencyXMLUpdater extends Thread {
     public void run() {
         try {
             while (keepUpdating) { //So it can be stopped by a setter
+                logger.info("Checking for updates");
                 String newXMLString = checkForUpdate();
                 if (newXMLString != null) {
                     //Giving the Dao the new list of currencies
@@ -100,9 +104,16 @@ public class CurrencyXMLUpdater extends Thread {
                         // and that they can be accessed
                         this.notify();
                     }
+                } else {
+                    logger.info("No updates for now..");
+                    currencyMainControllerObserver.updateWithLatestChange();
                 }
                 //Creating gaps between requests
-                Thread.sleep(timeToSleep);
+                try {
+                    Thread.sleep(timeToSleep);
+                } catch (InterruptedException e) {
+                    logger.debug("Sleep interrupted");
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
