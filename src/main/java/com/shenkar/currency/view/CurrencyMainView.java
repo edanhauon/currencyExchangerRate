@@ -54,7 +54,7 @@ public class CurrencyMainView extends JFrame implements Runnable {
         mainPanel = new JPanel();
         mainPanel.setLayout(new GridLayout(6, 1, 5, 5));
         mainPanel.setBorder(BorderFactory.createEmptyBorder(15, 20, 20, 20));
-        mainPanel.setPreferredSize(new Dimension(500, 800));
+        mainPanel.setPreferredSize(new Dimension(700, 800));
         add(mainPanel);
     }
 
@@ -66,8 +66,8 @@ public class CurrencyMainView extends JFrame implements Runnable {
         initLeftColumnLabel(upperLayer, "From: ");
 
         fromList = new JComboBox<>(currencyMainController.getCurrenciesNames().toArray());
-        fromList.setPreferredSize(new Dimension(10, 10));
-        fromList.setMaximumSize(new Dimension(50, 40));
+        fromList.setPreferredSize(new Dimension(80, 10));
+        fromList.setMaximumSize(new Dimension(80, 40));
         upperLayer.add(fromList);
 
         lastUpdated = initLastColumnName(upperLayer, "Last Update: " + currencyMainController.getLastUpdate(), BorderFactory.createEmptyBorder(2, 50, 2, 2));
@@ -83,8 +83,8 @@ public class CurrencyMainView extends JFrame implements Runnable {
         initLeftColumnLabel(lowerLayer, "To: ");
 
         toList = new JComboBox<>(currencyMainController.getCurrenciesNames().toArray());
-        toList.setPreferredSize(new Dimension(10, 10));
-        toList.setMaximumSize(new Dimension(50, 40));
+        toList.setPreferredSize(new Dimension(80, 10));
+        toList.setMaximumSize(new Dimension(80, 40));
         lowerLayer.add(toList);
 
         initLastColumnName(lowerLayer, "Amount", BorderFactory.createEmptyBorder(2, 50, 2, 40));
